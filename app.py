@@ -19,12 +19,11 @@ def checkout():
     if not target_url:
         return jsonify({"error": "Target URL is required"}), 400
         
-    # Placeholder for payment verification & scraping trigger
     return jsonify({
         "message": "Payment address generated. Send USDT on Polygon to proceed.",
         "target": target_url,
         "amount_usdt": "5.00",
-        "wallet": "0xYourPolygonWalletAddressHere"
+        "wallet": "0xYourActualPolygonWalletAddressHere"
     })
 
 if __name__ == '__main__':
